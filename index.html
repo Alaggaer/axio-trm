@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AXIO-TRM | Transport & Logistique Dernier Kilomètre</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        axioBlue: '#0F172A',
+                        axioOrange: '#F97316',
+                        axioGrey: '#64748B',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        html { scroll-behavior: smooth; }
+        .hero-pattern {
+            background-color: #0F172A;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%231e293b' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+<body class="font-sans text-slate-800 antialiased">
+
+    <!-- NAVIGATION -->
+    <nav class="bg-white shadow-md fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <!-- LOGO SVG INTEGRÉ -->
+                    <svg class="h-10 w-auto" viewBox="0 0 450 120" xmlns="http://www.w3.org/2000/svg">
+                        <g transform="translate(30, 20) scale(0.8)"> <!-- Scale ajusté pour la nav -->
+                            <path d="M20,20 L60,20 L80,50 L60,80 L20,80 L0,50 Z" fill="#0F172A" />
+                            <path d="M5,50 L45,50 L55,65 L15,65 Z" fill="#F97316" />
+                            <path d="M35,35 L75,35 L85,50 L45,50 Z" fill="#CBD5E1" opacity="0.5" />
+                            <text x="100" y="60" font-family="Verdana, sans-serif" font-weight="bold" font-size="52" fill="#0F172A">AXIO</text>
+                            <rect x="252" y="38" width="12" height="12" fill="#F97316" />
+                            <text x="275" y="60" font-family="Verdana, sans-serif" font-weight="normal" font-size="52" fill="#64748B">TRM</text>
+                        </g>
+                    </svg>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#expertise" class="text-slate-600 hover:text-axioOrange font-medium transition">Expertise</a>
+                    <a href="#carrieres" class="text-slate-600 hover:text-axioOrange font-medium transition">Carrières</a>
+                    <a href="#contact" class="bg-axioOrange text-white px-5 py-2 rounded-lg font-bold hover:bg-orange-600 transition shadow-lg transform hover:-translate-y-0.5">
+                        Nous Contacter
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="hero-pattern pt-32 pb-20 lg:pt-48 lg:pb-32 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 text-center md:text-left">
+                <div class="inline-block bg-axioOrange bg-opacity-20 text-axioOrange border border-axioOrange px-4 py-1 rounded-full text-sm font-bold mb-6">
+                    🚀 Delivery Service Partner
+                </div>
+                <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight leading-tight mb-6">
+                    L'excellence du <span class="text-axioOrange">dernier kilomètre</span>.
+                </h1>
+                <p class="text-lg text-slate-300 mb-8 max-w-xl">
+                    AXIO-TRM réinvente la logistique urbaine. Une flotte connectée, des process rigoureux et une équipe humaine au service de la satisfaction client.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <a href="#carrieres" class="bg-axioOrange text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-orange-600 transition shadow-lg text-center">
+                        Je veux devenir Chauffeur
+                    </a>
+                    <a href="#contact" class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white hover:text-axioBlue transition text-center">
+                        Espace Partenaires
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2 mt-12 md:mt-0 flex justify-center relative">
+                <!-- Illustration abstraite logistique (Cubes/Vitesse) -->
+                <div class="relative w-80 h-80 bg-white/5 rounded-2xl backdrop-blur-sm border border-white/10 p-8 transform rotate-3 shadow-2xl">
+                    <div class="absolute -top-10 -right-10 w-20 h-20 bg-axioOrange rounded-full opacity-50 blur-xl"></div>
+                    <div class="h-full flex flex-col justify-between">
+                        <div class="flex justify-between items-center border-b border-white/10 pb-4">
+                            <span class="text-sm text-slate-400">Taux de Livraison</span>
+                            <span class="text-green-400 font-bold">99.8%</span>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="h-2 bg-slate-700 rounded-full w-3/4"></div>
+                            <div class="h-2 bg-slate-700 rounded-full w-full"></div>
+                            <div class="h-2 bg-slate-700 rounded-full w-5/6"></div>
+                        </div>
+                        <div class="mt-4 pt-4 border-t border-white/10">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-full bg-green-500/20 flex items-center justify-center text-green-400">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <div>
+                                    <p class="font-bold">Fantastic Plus</p>
+                                    <p class="text-xs text-slate-400">Performance Score</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- VALEURS / EXPERTISE -->
+    <section id="expertise" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-axioBlue mb-4">Pourquoi choisir AXIO-TRM ?</h2>
+                <p class="text-slate-600 max-w-2xl mx-auto">Nous ne transportons pas seulement des colis, nous transportons la promesse de nos clients jusqu'à la porte du destinataire.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
+                    <div class="w-14 h-14 bg-blue-50 rounded-xl flex items-center justify-center text-axioBlue mb-6">
+                        <i class="fas fa-truck-fast text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-axioBlue mb-3">Fiabilité Absolue</h3>
+                    <p class="text-slate-600">
+                        Notre flotte est monitorée en temps réel. Nous garantissons le respect des créneaux et l'intégrité des marchandises.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
+                    <div class="w-14 h-14 bg-orange-50 rounded-xl flex items-center justify-center text-axioOrange mb-6">
+                        <i class="fas fa-mobile-alt text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-axioBlue mb-3">Technologie Embarquée</h3>
+                    <p class="text-slate-600">
+                        Utilisation d'outils d'optimisation de tournée (AI) et de sécurité active (Netradyne) pour protéger nos équipes et nos clients.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
+                    <div class="w-14 h-14 bg-green-50 rounded-xl flex items-center justify-center text-green-600 mb-6">
+                        <i class="fas fa-leaf text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-axioBlue mb-3">Engagement RSE</h3>
+                    <p class="text-slate-600">
+                        Une flotte moderne (Euro 6 / Électrique) et une politique RH favorisant la formation et la sécurité au travail.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RECRUTEMENT (SECTION CLÉ) -->
+    <section id="carrieres" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-axioBlue rounded-3xl overflow-hidden shadow-2xl flex flex-col md:flex-row">
+                <div class="md:w-1/2 p-12 flex flex-col justify-center">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">
+                        Rejoignez l'équipe <span class="text-axioOrange">AXIO-TRM</span>
+                    </h2>
+                    <p class="text-slate-300 mb-8 text-lg">
+                        Vous êtes dynamique, rigoureux et vous aimez conduire ? Nous recrutons des chauffeurs-livreurs (H/F) sur le secteur de Meaux (77).
+                    </p>
+                    <ul class="space-y-4 mb-8 text-slate-200">
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-check-circle text-axioOrange"></i> Formation complète assurée (POEI)
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-check-circle text-axioOrange"></i> Véhicules modernes & Équipements fournis
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-check-circle text-axioOrange"></i> Primes de qualité & Challenge sécurité
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-check-circle text-axioOrange"></i> Perspectives d'évolution
+                        </li>
+                    </ul>
+                    <a href="mailto:recrutement@axio-trm.fr" class="bg-axioOrange text-white px-8 py-4 rounded-xl font-bold text-center hover:bg-orange-600 transition w-full md:w-fit">
+                        Envoyer ma candidature
+                    </a>
+                </div>
+                <div class="md:w-1/2 bg-slate-800 relative min-h-[400px]">
+                    <!-- Image de fond suggérée (Van ou chauffeur souriant) -->
+                    <div class="absolute inset-0 flex items-center justify-center text-slate-600">
+                        <div class="text-center">
+                            <i class="fas fa-users text-6xl mb-4 opacity-50"></i>
+                            <p>Espace Candidat</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="contact" class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div class="col-span-1 md:col-span-2">
+                    <h3 class="text-white text-xl font-bold mb-4">AXIO-TRM</h3>
+                    <p class="mb-4 max-w-sm">
+                        Partenaire logistique de confiance spécialisé dans la gestion du dernier kilomètre. Basé à Meaux, nous opérons avec rigueur et sécurité.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Contact</h4>
+                    <ul class="space-y-2">
+                        <li><i class="fas fa-envelope mr-2"></i> contact@axio-trm.fr</li>
+                        <li><i class="fas fa-map-marker-alt mr-2"></i> Siège Social : Meaux (ZFU)</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Liens</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-axioOrange transition">Mentions Légales</a></li>
+                        <li><a href="#" class="hover:text-axioOrange transition">Politique de Confidentialité</a></li>
+                        <li><a href="#" class="hover:text-axioOrange transition">Recrutement</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-slate-800 text-center text-sm">
+                &copy; 2026 AXIO-TRM. Tous droits réservés. SAS au capital de 20 000 €.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

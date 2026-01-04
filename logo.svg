@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 120">
+  <!-- Fond (Optionnel) -->
+  <rect width="450" height="120" fill="#ffffff" rx="10" ry="10"/>
+  
+  <!-- Groupe Principal -->
+  <g transform="translate(30, 20)">
+    
+    <!-- Symbole : Le Cube Logistique Dynamique -->
+    <!-- Un hexagone suggérant un carton ouvert ou un maillon de chaîne logistique -->
+    <path d="M20,20 L60,20 L80,50 L60,80 L20,80 L0,50 Z" fill="#0F172A" />
+    
+    <!-- L'élément de vitesse (Orange) qui traverse le cube -->
+    <!-- Représente le flux tendu -->
+    <path d="M5,50 L45,50 L55,65 L15,65 Z" fill="#F97316" />
+    <path d="M35,35 L75,35 L85,50 L45,50 Z" fill="#CBD5E1" opacity="0.5" />
+    
+    <!-- Texte AXIO -->
+    <!-- Police très "Tech/Industrie", droite et impactante -->
+    <text x="100" y="60" font-family="Verdana, Geneva, sans-serif" font-weight="bold" font-size="52" fill="#0F172A">
+      AXIO
+    </text>
+    
+    <!-- Le tiret stylisé (Un carré orange) -->
+    <rect x="252" y="38" width="12" height="12" fill="#F97316" />
+    
+    <!-- Texte TRM -->
+    <!-- En outline (contour) ou couleur plus claire pour alléger -->
+    <text x="275" y="60" font-family="Verdana, Geneva, sans-serif" font-weight="normal" font-size="52" fill="#64748B">
+      TRM
+    </text>
+    
+    <!-- Baseline (Sous-titre) -->
+    <text x="102" y="85" font-family="Arial, Helvetica, sans-serif" font-weight="bold" font-size="10" fill="#94A3B8" letter-spacing="3" style="text-transform: uppercase;">
+      Delivery Service Partner
+    </text>
+    
+  </g>
+</svg>
+
