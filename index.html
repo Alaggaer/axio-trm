@@ -1,9 +1,20 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AXIO-TRM | Transport & Logistique Dernier Kilomètre</title>
+    
+    <title>AXIO-TRM | Transport & Logistique Dernier Kilomètre à Meaux</title>
+    <meta name="description" content="AXIO-TRM, partenaire logistique de confiance à Meaux (77). Recrutement de chauffeurs-livreurs, flotte connectée et service de livraison dernier kilomètre premium.">
+    <meta name="keywords" content="transport, logistique, dernier kilomètre, Meaux, chauffeur livreur, AXIO-TRM, livraison, emploi chauffeur 77">
+    <meta name="author" content="AXIO-TRM">
+
+    <meta property="og:title" content="AXIO-TRM | L'excellence du dernier kilomètre">
+    <meta property="og:description" content="Rejoignez une équipe dynamique. Recrutement chauffeurs sur le secteur de Meaux.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://axio-trm.fr">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?q=80&w=1200&auto=format&fit=crop">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -13,6 +24,17 @@
                         axioBlue: '#0F172A',
                         axioOrange: '#F97316',
                         axioGrey: '#64748B',
+                    },
+                    animation: {
+                        blob: "blob 7s infinite",
+                    },
+                    keyframes: {
+                        blob: {
+                            "0%": { transform: "translate(0px, 0px) scale(1)" },
+                            "33%": { transform: "translate(30px, -50px) scale(1.1)" },
+                            "66%": { transform: "translate(-20px, 20px) scale(0.9)" },
+                            "100%": { transform: "translate(0px, 0px) scale(1)" }
+                        }
                     }
                 }
             }
@@ -20,32 +42,32 @@
     </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        html { scroll-behavior: smooth; }
         .hero-pattern {
             background-color: #0F172A;
             background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%231e293b' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
         }
     </style>
 </head>
-<body class="font-sans text-slate-800 antialiased bg-slate-50">
+<body class="font-sans text-slate-800 antialiased bg-slate-50 flex flex-col min-h-screen">
 
-    <!-- NAVIGATION -->
     <nav class="bg-white shadow-md fixed w-full z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-20">
                 <div class="flex items-center">
-                    <!-- LOGO SVG INTEGRÉ -->
-                    <svg class="h-10 w-auto" viewBox="0 0 450 120" xmlns="http://www.w3.org/2000/svg">
-                        <g transform="translate(30, 20) scale(0.8)">
-                            <path d="M20,20 L60,20 L80,50 L60,80 L20,80 L0,50 Z" fill="#0F172A" />
-                            <path d="M5,50 L45,50 L55,65 L15,65 Z" fill="#F97316" />
-                            <path d="M35,35 L75,35 L85,50 L45,50 Z" fill="#CBD5E1" opacity="0.5" />
-                            <text x="100" y="60" font-family="Verdana, sans-serif" font-weight="bold" font-size="52" fill="#0F172A">AXIO</text>
-                            <rect x="252" y="38" width="12" height="12" fill="#F97316" />
-                            <text x="275" y="60" font-family="Verdana, sans-serif" font-weight="normal" font-size="52" fill="#64748B">TRM</text>
-                        </g>
-                    </svg>
+                    <a href="#" aria-label="Retour à l'accueil">
+                        <svg class="h-10 w-auto" viewBox="0 0 450 120" xmlns="http://www.w3.org/2000/svg">
+                            <g transform="translate(30, 20) scale(0.8)">
+                                <path d="M20,20 L60,20 L80,50 L60,80 L20,80 L0,50 Z" fill="#0F172A" />
+                                <path d="M5,50 L45,50 L55,65 L15,65 Z" fill="#F97316" />
+                                <path d="M35,35 L75,35 L85,50 L45,50 Z" fill="#CBD5E1" opacity="0.5" />
+                                <text x="100" y="60" font-family="Verdana, sans-serif" font-weight="bold" font-size="52" fill="#0F172A">AXIO</text>
+                                <rect x="252" y="38" width="12" height="12" fill="#F97316" />
+                                <text x="275" y="60" font-family="Verdana, sans-serif" font-weight="normal" font-size="52" fill="#64748B">TRM</text>
+                            </g>
+                        </svg>
+                    </a>
                 </div>
+                
                 <div class="hidden md:flex items-center space-x-8">
                     <a href="#expertise" class="text-slate-600 hover:text-axioOrange font-medium transition">Expertise</a>
                     <a href="#carrieres" class="text-slate-600 hover:text-axioOrange font-medium transition">Carrières</a>
@@ -53,56 +75,60 @@
                         Nous Contacter
                     </a>
                 </div>
+
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-slate-600 hover:text-axioOrange focus:outline-none p-2">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
             </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden absolute top-20 left-0 w-full bg-white shadow-lg border-t border-slate-100 flex flex-col">
+            <a href="#expertise" class="block px-6 py-4 text-slate-600 hover:bg-slate-50 hover:text-axioOrange font-medium border-b border-slate-50">Expertise</a>
+            <a href="#carrieres" class="block px-6 py-4 text-slate-600 hover:bg-slate-50 hover:text-axioOrange font-medium border-b border-slate-50">Carrières</a>
+            <a href="#contact" class="block px-6 py-4 text-axioOrange font-bold bg-slate-50">Nous Contacter</a>
         </div>
     </nav>
 
-    <!-- HERO SECTION -->
-    <header class="hero-pattern pt-32 pb-20 lg:pt-48 lg:pb-32 text-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center">
-            <div class="md:w-1/2 text-center md:text-left">
+    <header class="hero-pattern pt-32 pb-20 lg:pt-48 lg:pb-32 text-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-12">
+            
+            <div class="md:w-1/2 text-center md:text-left z-10">
                 <div class="inline-block bg-axioOrange bg-opacity-20 text-axioOrange border border-axioOrange px-4 py-1 rounded-full text-sm font-bold mb-6">
                     🚀 Delivery Service Partner
                 </div>
                 <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight leading-tight mb-6">
                     L'excellence du <span class="text-axioOrange">dernier kilomètre</span>.
                 </h1>
-                <p class="text-lg text-slate-300 mb-8 max-w-xl">
-                    AXIO-TRM réinvente la logistique urbaine. Une flotte connectée, des process rigoureux et une équipe humaine au service de la satisfaction client.
+                <p class="text-lg text-slate-300 mb-8 max-w-xl mx-auto md:mx-0">
+                    AXIO-TRM réinvente la logistique urbaine à Meaux. Une flotte connectée, des process rigoureux et une équipe humaine au service de la satisfaction client.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                    <a href="#carrieres" class="bg-axioOrange text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-orange-600 transition shadow-lg text-center">
-                        Je veux devenir Chauffeur
+                    <a href="#carrieres" class="bg-axioOrange text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-orange-600 transition shadow-lg text-center transform hover:scale-105 duration-200">
+                        Je deviens Chauffeur
                     </a>
                     <a href="#contact" class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white hover:text-axioBlue transition text-center">
                         Espace Partenaires
                     </a>
                 </div>
             </div>
-            <div class="md:w-1/2 mt-12 md:mt-0 flex justify-center relative">
-                <!-- Illustration abstraite logistique -->
-                <div class="relative w-80 h-80 bg-white/5 rounded-2xl backdrop-blur-sm border border-white/10 p-8 transform rotate-3 shadow-2xl">
-                    <div class="absolute -top-10 -right-10 w-20 h-20 bg-axioOrange rounded-full opacity-50 blur-xl"></div>
-                    <div class="h-full flex flex-col justify-between">
-                        <div class="flex justify-between items-center border-b border-white/10 pb-4">
-                            <span class="text-sm text-slate-400">Taux de Livraison</span>
-                            <span class="text-green-400 font-bold">99.8%</span>
+
+            <div class="md:w-1/2 flex justify-center relative z-10">
+                <div class="relative w-full max-w-md">
+                    <div class="absolute -top-4 -right-4 w-24 h-24 bg-axioOrange rounded-full opacity-50 blur-xl animate-pulse"></div>
+                    
+                    <img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?q=80&w=800&auto=format&fit=crop" 
+                         alt="Livraison dernier kilomètre AXIO-TRM" 
+                         class="rounded-2xl shadow-2xl border-4 border-white/10 transform rotate-2 hover:rotate-0 transition duration-500 object-cover h-80 w-full">
+                    
+                    <div class="absolute -bottom-6 -left-6 bg-white text-slate-800 p-4 rounded-xl shadow-xl flex items-center gap-3 animate-bounce" style="animation-duration: 3s;">
+                        <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center text-green-600">
+                            <i class="fas fa-check-circle text-xl"></i>
                         </div>
-                        <div class="space-y-4">
-                            <div class="h-2 bg-slate-700 rounded-full w-3/4"></div>
-                            <div class="h-2 bg-slate-700 rounded-full w-full"></div>
-                            <div class="h-2 bg-slate-700 rounded-full w-5/6"></div>
-                        </div>
-                        <div class="mt-4 pt-4 border-t border-white/10">
-                            <div class="flex items-center gap-3">
-                                <div class="w-10 h-10 rounded-full bg-green-500/20 flex items-center justify-center text-green-400">
-                                    <i class="fas fa-check"></i>
-                                </div>
-                                <div>
-                                    <p class="font-bold">Fantastic Plus</p>
-                                    <p class="text-xs text-slate-400">Performance Score</p>
-                                </div>
-                            </div>
+                        <div>
+                            <p class="text-xs text-slate-500 font-bold uppercase">Taux de Livraison</p>
+                            <p class="text-xl font-extrabold text-axioBlue">99.8%</p>
                         </div>
                     </div>
                 </div>
@@ -110,7 +136,6 @@
         </div>
     </header>
 
-    <!-- VALEURS / EXPERTISE -->
     <section id="expertise" class="py-20 bg-slate-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
@@ -119,9 +144,8 @@
             </div>
 
             <div class="grid md:grid-cols-3 gap-8">
-                <!-- Card 1 -->
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
-                    <div class="w-14 h-14 bg-blue-50 rounded-xl flex items-center justify-center text-axioBlue mb-6">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-lg transition duration-300 group">
+                    <div class="w-14 h-14 bg-blue-50 rounded-xl flex items-center justify-center text-axioBlue mb-6 group-hover:bg-axioBlue group-hover:text-white transition">
                         <i class="fas fa-truck-fast text-2xl"></i>
                     </div>
                     <h3 class="text-xl font-bold text-axioBlue mb-3">Fiabilité Absolue</h3>
@@ -130,9 +154,8 @@
                     </p>
                 </div>
 
-                <!-- Card 2 -->
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
-                    <div class="w-14 h-14 bg-orange-50 rounded-xl flex items-center justify-center text-axioOrange mb-6">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-lg transition duration-300 group">
+                    <div class="w-14 h-14 bg-orange-50 rounded-xl flex items-center justify-center text-axioOrange mb-6 group-hover:bg-axioOrange group-hover:text-white transition">
                         <i class="fas fa-mobile-alt text-2xl"></i>
                     </div>
                     <h3 class="text-xl font-bold text-axioBlue mb-3">Technologie Embarquée</h3>
@@ -141,9 +164,8 @@
                     </p>
                 </div>
 
-                <!-- Card 3 -->
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
-                    <div class="w-14 h-14 bg-green-50 rounded-xl flex items-center justify-center text-green-600 mb-6">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-lg transition duration-300 group">
+                    <div class="w-14 h-14 bg-green-50 rounded-xl flex items-center justify-center text-green-600 mb-6 group-hover:bg-green-600 group-hover:text-white transition">
                         <i class="fas fa-leaf text-2xl"></i>
                     </div>
                     <h3 class="text-xl font-bold text-axioBlue mb-3">Engagement RSE</h3>
@@ -155,12 +177,13 @@
         </div>
     </section>
 
-    <!-- RECRUTEMENT -->
     <section id="carrieres" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="bg-axioBlue rounded-3xl overflow-hidden shadow-2xl flex flex-col md:flex-row">
-                <!-- COLONNE GAUCHE TEXTE -->
-                <div class="md:w-1/2 p-12 flex flex-col justify-center">
+            <div class="bg-axioBlue rounded-3xl overflow-hidden shadow-2xl flex flex-col md:flex-row relative">
+                <div class="absolute top-0 right-0 w-64 h-64 bg-blue-600 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
+                <div class="absolute bottom-0 left-0 w-64 h-64 bg-orange-600 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
+
+                <div class="md:w-1/2 p-8 md:p-12 flex flex-col justify-center z-10">
                     <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">
                         Rejoignez l'équipe <span class="text-axioOrange">AXIO-TRM</span>
                     </h2>
@@ -181,25 +204,21 @@
                             <i class="fas fa-check-circle text-axioOrange"></i> Perspectives d'évolution
                         </li>
                     </ul>
-                    <a href="mailto:recrutement@axio-trm.fr?subject=Candidature Chauffeur-Livreur - [VOTRE NOM]&body=Bonjour,%0D%0A%0D%0AJe souhaite postuler au poste de Chauffeur-Livreur chez AXIO-TRM.%0D%0A%0D%0AVeuillez trouver ci-joint mon CV.%0D%0A%0D%0ACordialement," class="bg-axioOrange text-white px-8 py-4 rounded-xl font-bold text-center hover:bg-orange-600 transition w-full md:w-fit">
-                        Envoyer ma candidature
+                    <a href="mailto:recrutement@axio-trm.fr?subject=Candidature Chauffeur-Livreur - [VOTRE NOM]&body=Bonjour,%0D%0A%0D%0AJe souhaite postuler au poste de Chauffeur-Livreur chez AXIO-TRM.%0D%0A%0D%0AVeuillez trouver ci-joint mon CV.%0D%0A%0D%0ACordialement," 
+                       class="bg-axioOrange text-white px-8 py-4 rounded-xl font-bold text-center hover:bg-orange-600 transition w-full md:w-fit shadow-lg flex items-center justify-center gap-2">
+                        <i class="fas fa-paper-plane"></i> Envoyer ma candidature
                     </a>
                 </div>
                 
-                <!-- COLONNE DROITE VISUELLE (Le "Carré Noir" amélioré) -->
-                <div class="md:w-1/2 bg-slate-800 relative min-h-[400px] flex items-center justify-center p-8">
-                    <!-- Décoration de fond -->
-                    <div class="absolute top-0 right-0 w-64 h-64 bg-blue-600 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
-                    <div class="absolute bottom-0 left-0 w-64 h-64 bg-orange-600 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
+                <div class="md:w-1/2 bg-slate-800/50 relative min-h-[400px] flex items-center justify-center p-8 border-l border-white/5">
                     
-                    <!-- Carte "Le Pack Driver" -->
-                    <div class="bg-white/10 backdrop-blur-md border border-white/20 p-8 rounded-2xl w-full max-w-sm">
+                    <div class="bg-white/10 backdrop-blur-md border border-white/20 p-8 rounded-2xl w-full max-w-sm hover:transform hover:-translate-y-1 transition duration-300">
                         <h3 class="text-white font-bold text-xl mb-6 text-center border-b border-white/20 pb-4">
                             Le Pack Driver AXIO
                         </h3>
                         <div class="space-y-6">
                             <div class="flex items-center gap-4">
-                                <div class="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center text-white shrink-0">
+                                <div class="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center text-white shrink-0 shadow-lg">
                                     <i class="fas fa-shuttle-van"></i>
                                 </div>
                                 <div>
@@ -208,7 +227,7 @@
                                 </div>
                             </div>
                             <div class="flex items-center gap-4">
-                                <div class="w-12 h-12 bg-orange-500 rounded-lg flex items-center justify-center text-white shrink-0">
+                                <div class="w-12 h-12 bg-orange-500 rounded-lg flex items-center justify-center text-white shrink-0 shadow-lg">
                                     <i class="fas fa-mobile-screen"></i>
                                 </div>
                                 <div>
@@ -217,7 +236,7 @@
                                 </div>
                             </div>
                             <div class="flex items-center gap-4">
-                                <div class="w-12 h-12 bg-slate-600 rounded-lg flex items-center justify-center text-white shrink-0">
+                                <div class="w-12 h-12 bg-slate-600 rounded-lg flex items-center justify-center text-white shrink-0 shadow-lg">
                                     <i class="fas fa-tshirt"></i>
                                 </div>
                                 <div>
@@ -235,21 +254,29 @@
         </div>
     </section>
 
-    <!-- FOOTER -->
-    <footer id="contact" class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
+    <footer id="contact" class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800 mt-auto">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-4 gap-8 mb-8">
                 <div class="col-span-1 md:col-span-2">
-                    <h3 class="text-white text-xl font-bold mb-4">AXIO-TRM</h3>
+                    <h3 class="text-white text-xl font-bold mb-4 flex items-center gap-2">
+                        AXIO-TRM
+                    </h3>
                     <p class="mb-4 max-w-sm">
                         Partenaire logistique de confiance spécialisé dans la gestion du dernier kilomètre. Basé à Meaux, nous opérons avec rigueur et sécurité.
                     </p>
                 </div>
                 <div>
                     <h4 class="text-white font-bold mb-4">Contact</h4>
-                    <ul class="space-y-2">
-                        <li><i class="fas fa-envelope mr-2"></i> contact@axio-trm.fr</li>
-                        <li><i class="fas fa-map-marker-alt mr-2"></i> Siège Social : Meaux (ZFU)</li>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="mailto:contact@axio-trm.fr" class="hover:text-axioOrange transition flex items-center">
+                                <i class="fas fa-envelope w-6"></i> contact@axio-trm.fr
+                            </a>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt w-6 mt-1"></i> 
+                            <span>Siège Social :<br>Meaux (ZFU), France</span>
+                        </li>
                     </ul>
                 </div>
                 <div>
@@ -261,13 +288,13 @@
                     </ul>
                 </div>
             </div>
-            <div class="pt-8 border-t border-slate-800 text-center text-sm">
-                &copy; 2026 AXIO-TRM. Tous droits réservés. SAS au capital de 20 000 €.
+            <div class="pt-8 border-t border-slate-800 text-center text-sm flex flex-col md:flex-row justify-between items-center">
+                <p>&copy; 2026 AXIO-TRM. Tous droits réservés.</p>
+                <p class="mt-2 md:mt-0">SAS au capital de 20 000 €</p>
             </div>
         </div>
     </footer>
 
-    <!-- SECTION MENTIONS LEGALES (Cachée par défaut ou en bas de page) -->
     <section id="mentions" class="py-12 bg-slate-100 border-t border-slate-200">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-sm text-slate-600">
             <h2 class="text-xl font-bold text-axioBlue mb-4">Mentions Légales</h2>
@@ -276,7 +303,7 @@
                 Le site axio-trm.fr est édité par la société AXIO-TRM, Société par Actions Simplifiée (SAS) au capital de 20 000 €.<br>
                 Immatriculée au RCS de Meaux.<br>
                 Siège social : Meaux (Zone Franche Urbaine), France.<br>
-                Email : direction@axio-trm.fr | Téléphone : 06 01 85 33 79</p>
+                Email : direction@axio-trm.fr</p>
 
                 <p><strong>Directeur de la publication :</strong><br>
                 Monsieur Sylvain BONAL, en sa qualité de Président.</p>
@@ -284,32 +311,56 @@
                 <p><strong>Hébergement :</strong><br>
                 Ce site est hébergé par GitHub, Inc. (GitHub Pages).<br>
                 Adresse : 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, United States.</p>
-                
-                <p><strong>Propriété intellectuelle :</strong><br>
-                L'ensemble de ce site relève de la législation française et internationale sur le droit d'auteur et la propriété intellectuelle. Tous les droits de reproduction sont réservés, y compris pour les documents téléchargeables et les représentations iconographiques et photographiques.</p>
             </div>
         </div>
     </section>
 
-    <!-- SECTION CONFIDENTIALITÉ -->
     <section id="privacy" class="py-12 bg-white border-t border-slate-200">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-sm text-slate-600">
             <h2 class="text-xl font-bold text-axioBlue mb-4">Politique de Confidentialité (RGPD)</h2>
             <div class="space-y-4">
                 <p><strong>Collecte des données :</strong><br>
-                AXIO-TRM s'engage à ce que la collecte et le traitement de vos données, effectués à partir du site axio-trm.fr, soient conformes au règlement général sur la protection des données (RGPD) et à la loi Informatique et Libertés.</p>
+                AXIO-TRM s'engage à ce que la collecte et le traitement de vos données soient conformes au RGPD.</p>
 
                 <p><strong>Données de recrutement :</strong><br>
-                Les informations recueillies lors de l'envoi d'une candidature (CV, Lettre de motivation, Email) sont enregistrées dans un fichier informatisé par AXIO-TRM pour la gestion des recrutements. Elles sont conservées pendant une durée maximale de 2 ans après le dernier contact avec le candidat.</p>
-
-                <p><strong>Vos droits :</strong><br>
-                Vous pouvez accéder aux données vous concernant, les rectifier, demander leur effacement ou exercer votre droit à la limitation du traitement de vos données. Pour exercer ces droits ou pour toute question sur le traitement de vos données dans ce dispositif, vous pouvez contacter : direction@axio-trm.fr</p>
+                Les informations recueillies (CV, Lettre) sont enregistrées pour la gestion des recrutements et conservées pendant 2 ans maximum.</p>
                 
                 <p><strong>Cookies :</strong><br>
-                Ce site vitrine n'utilise pas de cookies de traçage publicitaire. Seuls des cookies techniques nécessaires au fonctionnement peuvent être déposés.</p>
+                Ce site vitrine n'utilise pas de cookies de traçage publicitaire.</p>
             </div>
         </div>
     </section>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const btn = document.getElementById('mobile-menu-btn');
+            const menu = document.getElementById('mobile-menu');
+            
+            // Toggle du menu au clic sur le bouton
+            btn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+                
+                // Animation simple de l'icône (Optionnel)
+                const icon = btn.querySelector('i');
+                if (menu.classList.contains('hidden')) {
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                } else {
+                    icon.classList.remove('fa-bars');
+                    icon.classList.add('fa-times');
+                }
+            });
+
+            // Fermer le menu si on clique sur un lien
+            menu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    menu.classList.add('hidden');
+                    const icon = btn.querySelector('i');
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                });
+            });
+        });
+    </script>
 </body>
 </html>
